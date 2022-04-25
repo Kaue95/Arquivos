@@ -1,0 +1,15 @@
+4. Elabore um a algoritmo, fluxograma e programa em C que leia um número e mostre a tabuada (de 1 a 10) do número lido, utilizando uma estrutura de repetição. 
+
+Início do programa:
+	Para infinito
+		imprimir: Esse programa imprime a tabuada do 1 ao 10 de acordo com o número digitado pelo usuário.
+		imprimir:Digite um número:
+		armazena: número
+		Para x=0 onde x é menor ou igual a 10
+			imprimir: (número * x= numero*x)
+			imprimir: Pressione ENTER para digitar um novo número.
+		Fim do Para
+		limpar sistema
+	Fim do para infinito
+Fim do programa
+	

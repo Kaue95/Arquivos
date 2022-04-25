@@ -1,0 +1,86 @@
+CREATE TABLE Clientes (
+	ID_Cliente INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Nome_Cliente VARCHAR(40) NOT NULL,
+	CPF_Cliente VARCHAR(14) NOT NULL UNIQUE
+);
+
+CREATE TABLE Produtos (
+	ID_Produto INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Nome_Produto VARCHAR(50) NOT NULL,
+	Preco_Produto DECIMAL(5,2) NOT NULL
+);
+
+CREATE TABLE NotasFiscais (
+	ID_NF INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	Data_NF DATE NOT NULL,
+	ID_Cliente INT NOT NULL,
+	CONSTRAINT FK_NF_Clientes FOREIGN KEY(ID_Cliente)
+	REFERENCES Clientes(ID_Cliente)
+); 
+
+CREATE TABLE ItensNF (
+	ID_ItensNF INT NOT NULL,
+	ID_Produto INT NOT NULL,
+	Qtde_Vendida TINYINT NOT NULL,
+	CONSTRAINT PK_ItensNF PRIMARY KEY(ID_ItensNF,ID_Produto),
+	CONSTRAINT FK_ItensNF_NF FOREIGN KEY(ID_ItensNF)
+	REFERENCES NotasFiscais(ID_NF),
+	CONSTRAINT FK_ItensNF_Produto FOREIGN KEY(ID_Produto)
+	REFERENCES Produtos(ID_Produto)
+);
+
+
+INSERT INTO Clientes VALUES
+(null,"Abesvaldo","169.259.785-02"),
+(null,"Beutricio","613.796.863-42"),
+(null,"Crustacio","914.142.453-22"),
+(null,"Drumundo","710.806.264-05"),
+(null,"Eustacio","265.485.504-07"),
+(null,"Felicia","142.744.412-16");
+
+INSERT INTO Produtos VALUES
+(null, "Ivermectina", 35.00),
+(null, "Saxenda", 35.00),
+(null, "Xarelto", 35.00),
+(null, "Glifage", 35.00),
+(null, "Aradois", 17.50),
+(null, "Ozempic", 740.80),
+(null, "Neo Soro", 8.99),
+(null, "Torsilax", 13.50),
+(null, "Aerolin", 16.99),
+(null, "Losartan", 6.90),
+(null, "Glyxambi", 232.50),
+(null, "Dipirona", 5.00),
+(null, "Amitripilina", 20.50),
+(null, "Diazepam", 15.99);
+
+INSERT INTO NotasFiscais VALUES
+(null,”2022-04-24”, 2),
+(null,”2022-04-29”, 5),
+(null,”2022-04-30”,3),
+(null,”2022-05-05”,6),
+(null,”2022-05-11”,4),  
+(null,”2022-05-12”,1);
+
+INSERT INTO ItensNF VALUES
+(1,7,5),
+(1,12,3),
+(1,13,1),
+(1,1,1),
+(1,5,2),
+(2,6,1),
+(2,8,2),
+(2,10,2),
+(3,14,2),
+(3,9,2),
+(3,4,1),
+(3,3,3),
+(4,6,1),
+(4,7,3),
+(5,2,4),
+(5,3,1),
+(5,9,2),
+(5,10,4),
+(6,11,3),
+(6,6,2);
+

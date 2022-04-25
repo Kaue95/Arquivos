@@ -1,0 +1,34 @@
+SELECT * FROM ItensNF
+GROUP BY IDVenda;
+
+SELECT ItensNF.IDVenda,
+COUNT(Livros.IDLivro) AS "Total de Produtos"
+FROM ItensNF
+INNER JOIN Livros
+ON Livros.IDLivro = ItensNF.IDVenda
+GROUP BY IDVenda;
+
+SELECT ItensNF.IDVenda,
+COUNT(Livros.IDLivro) AS "Total de Produtos",
+SUM(ItensNF.QtdeVendida) AS "Somatorias"
+FROM ItensNF
+INNER JOIN Livros
+ON Livros.IDLivro = ItensNF.IDVenda
+GROUP BY IDVenda;
+
+SELECT IDVenda,
+MAX(QtdeVendida) AS "Maior Quantidade Vendida"
+FROM ItensNF
+GROUP BY IDVenda;
+
+SELECT NotasFiscais.IDVenda,
+NotasFiscais.DataVenda AS "Data",
+Livrarias.NomeLivraria,
+Livros.PrecoUnitario * ItensNF.QtdeVendida AS "Total a Pagar"
+FROM Livrarias INNER JOIN
+(NotasFiscais INNER JOIN
+ (ItensNF INNER JOIN Livros
+ ON Livros.IDLivro = ItensNF.IDLivro)
+ ON ItensNF.IDVenda = NotasFiscais.IDVenda)
+ON Livrarias.IDLivraria = NotasFiscais.IDLivraria
+GROUP BY NotasFiscais.IDVenda;

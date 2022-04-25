@@ -1,0 +1,89 @@
+mysql -h localhost -u root -p
+
+CREATE DATABASE Editora;
+
+USE editora;
+
+CREATE TABLE Livrarias
+(
+	IDLivraria INT NOT NULL,
+	NomeLivraria VARCHAR(30) NOT NULL,
+	Endereco VARCHAR(50) NOT NULL,
+	CNPJ INT NOT NULL,
+	CONSTRAINT PK_Livraria PRIMARY KEY (IDLivraria)
+);
+
+CREATE TABLE NotasFiscais
+(
+	CodigoVenda INT NOT NULL,
+	DataVenda DATE NOT NULL,
+	IDLivraria INT NOT NULL,
+	CONSTRAINT PK_NotaFiscal PRIMARY KEY (CodigoVenda),
+	CONSTRAINT FK_Livraria FOREIGN KEY (IDLivraria)
+	REFERENCES Livrarias(IDLivraria)
+);
+
+CREATE TABLE ItensNF
+(
+	CodigoVenda INT NOT NULL,
+	IDLivro INT NOT NULL,
+	QtdeVendida INT NOT NULL,
+	CONSTRAINT PK_NotaFiscal PRIMARY KEY (CodigoVenda,IDLivro),
+	CONSTRAINT FK_NotaFiscal FOREIGN KEY (CodigoVenda)
+	REFERENCES NotasFiscais(CodigoVenda)
+);
+
+CREATE TABLE Livros
+(
+	IDLivro INT NOT NULL,
+	TituloLivro VARCHAR(35) NOT NULL,
+	Autor VARCHAR(40) NOT NULL,
+	PrecoUnitario FLOAT NOT NULL,
+	CONSTRAINT PK_Livro PRIMARY KEY (IDLivro),
+);
+
+CREATE DATABASE Locadora;
+
+USE Locadora;
+
+CREATE TABLE Clientes
+(
+	IDCliente INT NOT NULL,
+	NomeCliente VARCHAR(35) NOT NULL,
+	Endereco VARCHAR(50) NOT NULL,
+	CPF VARCHAR(14) NOT NULL,
+	Telefone INT NULL,
+	CONSTRAINT PK_Cliente PRIMARY KEY (IDCliente),
+	CONSTRAINT UN_CPF UNIQUE (CPF)
+);
+
+CREATE TABLE Alugueis
+(
+	Comprovante INT NOT NULL,
+	Data DATE NOT NULL,
+	Devolucao DATETIME NOT NULL,
+	IDCliente INT NOT NULL,
+	CONSTRAINT PK_Comprovante PRIMARY KEY (Comprovante),
+	CONSTRAINT FK_Cliente FOREIGN KEY (IDCliente)
+	REFERENCES Clientes(IDCliente)
+);
+
+CREATE TABLE ItensAlugados
+(
+	Comprovante INT NOT NULL,
+	IDFilme INT NOT NULL,
+	QtdeEstoque INT NOT NULL,
+	CONSTRAINT PK_Comprovante PRIMARY KEY (Comprovante,IDFilme)
+);
+
+CREATE TABLE Filmes
+(
+	IDFilme INT NOT NULL,
+	Titulo VARCHAR(40) NOT NULL,
+	Genero VARCHAR(30) NOT NULL,
+	Idioma VARCHAR(30) NOT NULL,
+	Preco FLOAT NOT NULL,
+	CONSTRAINT PK_pfilme PRIMARY KEY (IDFilme),
+	CONSTRAINT FK_esfilme FOREIGN KEY (IDFilme)
+	REFERENCES ItensAlugados(Comprovante)
+);

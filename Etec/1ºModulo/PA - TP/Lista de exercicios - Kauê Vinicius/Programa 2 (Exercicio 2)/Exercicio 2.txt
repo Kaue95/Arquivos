@@ -1,0 +1,13 @@
+Crie um algoritmo (fluxograma, pseudocódigo e programa) que leia um número, 
+some ao seu valor cinco e mostre o resultado se ele for maior que dez.
+
+Inicio do programa
+	imprimir: Esse programa soma o um valor a cinco e mostra caso ele for maior que dez!.
+	imprimir: Digite o número:
+	armazena o valor
+	valor recebe +5
+	SE valor > 10
+		imprimir:O resultado da soma é maior que dez, portanto seu resultado é:
+	SENÃO
+		imprimir:O valor não pode ser mostrado!
+fim do programa

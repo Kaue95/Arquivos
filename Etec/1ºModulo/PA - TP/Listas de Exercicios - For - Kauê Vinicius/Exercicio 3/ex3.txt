@@ -1,0 +1,15 @@
+3. Crie um algoritmo, fluxograma e programa em C que leia dois números e mostre os números entre eles.
+
+Início do Programa 
+
+	int x, y;
+	imprimir: Esse programa imprime os números entre os dois números digitados pelo usuário.
+	imprimir:Digite o primeiro número:
+	armazena: x
+	imprimir:Digite o segundo número:
+	armazena: y
+	Para x, faça até y
+		imprimir: x
+	Fim do para
+Fim do Programa
+	  

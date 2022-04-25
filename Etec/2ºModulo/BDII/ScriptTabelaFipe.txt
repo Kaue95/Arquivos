@@ -1,0 +1,70 @@
+DROP DATABASE IF EXISTS Fipe;
+CREATE DATABASE IF NOT EXISTS Fipe;
+USE Fipe;
+
+CREATE TABLE Carros
+(
+	CodCarro INT NOT NULL,
+	Fabricante VARCHAR(30) NOT NULL,
+	Modelo VARCHAR(80) NOT NULL,
+	Ano VARCHAR(4) NOT NULL,
+	Preco DECIMAL(8,2) NOT NULL,
+	CONSTRAINT PK_CodCarro PRIMARY KEY(CodCarro)
+);
+
+INSERT INTO Carros
+VALUES (1, "VW - VolksWagen","Gol 1.6 I MOTI.Power/Highli T.Flex 8V 4p","2015","42292.00"),
+(2, "VW - VolksWagen","Gol 1.6 I MOTI.Power/Highli T.Flex 8V 4p","2016","45646.00"),
+(3, "VW - VolksWagen","Gol 1.6 I MOTI.Power/Highli T.Flex 8V 4p","2017","50283.00"),
+(4, "VW - VolksWagen","Saveiro Robust 1.6 Total Flex 8V","2020","59507.00"),
+(5, "VW - VolksWagen","Saveiro Robust 1.6 Total Flex 8V","2021","64699.00"),
+(6, "VW - VolksWagen","Saveiro Robust 1.6 Total Flex 8V","2022","69541.00"),
+(7, "VW - VolksWagen","VOYAGE 1.6 MSI Flex 8V 4p","2019","54504.00"),
+(8, "VW - VolksWagen","VOYAGE 1.6 MSI Flex 8V 4p","2020","57096.00"),
+(9, "VW - VolksWagen","VOYAGE 1.6 MSI Flex 8V 4p","2021","65118.00"),
+(10, "VW - VolksWagen","VIRTUS 1.6 MSI Flex 16V 4p Aut.","2019","73987.00"),
+(11, "VW - VolksWagen","VIRTUS 1.6 MSI Flex 16V 4p Aut.","2020","77780.00"),
+(12, "VW - VolksWagen","VIRTUS 1.6 MSI Flex 16V 4p Aut.","2021","84781.00"),
+(13, "VW - VolksWagen","Polo 1.6 MSI Total Flex 16V 5p Aut.","2019","68290.00"),
+(14, "VW - VolksWagen","Polo 1.6 MSI Total Flex 16V 5p Aut.","2020","70492.00"),
+(15, "VW - VolksWagen","Polo 1.6 MSI Total Flex 16V 5p Aut.","2021","74326.00"),
+(16, "Jaguar","F-Type S Supercharged Coupe 3.0 V6","2015","353352.00"),
+(17, "Jaguar","F-Type S Supercharged Coupe 3.0 V6","2016","373756.00"),
+(18, "Jaguar","F-Type S Supercharged Coupe 3.0 V6","2017","412462.00"),
+(19, "Jaguar","XF 2.0 R-SPORT Aut.","2018","280121.00"),
+(20, "Jaguar","XF 2.0 R-SPORT Aut.","2019","289909.00"),
+(21, "Jaguar","XF 2.0 R-SPORT Aut.","2020","340021.00"),
+(22, "Jaguar","E-Pace R-Dynamic SE 2.0 AWD 300cv Aut.","2018","276603.00"),
+(23, "Jaguar","E-Pace R-Dynamic SE 2.0 AWD 300cv Aut.","2019","299485.00"),
+(24, "Jaguar","E-Pace R-Dynamic SE 2.0 AWD 300cv Aut.","2020","324507.00"),
+(25, "Jaguar","F-Type 3.0 R-Dynamic Coupe 380cv Aut.","2019","435296.00"),
+(26, "Jaguar","F-Type 3.0 R-Dynamic Coupe 380cv Aut.","2020","475061.00"),
+(27, "Jaguar","F-Type 3.0 R-Dynamic Coupe 380cv Aut.","2021","571411.00"),
+(28, "Jaguar","XF 2.0 R-SPORT Aut.","2017","199686.00"),
+(29, "Jaguar","XF 2.0 R-SPORT Aut.","2018","280121.00"),
+(30, "Jaguar","XF 2.0 R-SPORT Aut.","2019","289909.00"),
+(31, "Honda","HR-V EX 1.8 Flexone 16V 5p Aut.","2019","111598.00"),
+(32, "Honda","HR-V EX 1.8 Flexone 16V 5p Aut.","2020","116462.00"),
+(33, "Honda","HR-V EX 1.8 Flexone 16V 5p Aut.","2021","120552.00"),
+(34, "Honda","WR-V EXL 1.5 Flexone 16V 5p Aut.","2019","93268.00"),
+(35, "Honda","WR-V EXL 1.5 Flexone 16V 5p Aut.","2020","99881.00"),
+(36, "Honda","WR-V EXL 1.5 Flexone 16V 5p Aut.","2021","104253.00"),
+(37, "Honda","CITY Sedan LX 1.5 Flex 16V 4p Aut.","2019","81711.00"),
+(38, "Honda","CITY Sedan LX 1.5 Flex 16V 4p Aut.","2020","87488.00"),
+(39, "Honda","CITY Sedan LX 1.5 Flex 16V 4p Aut.","2021","90811.00"),
+(40, "Honda","Civic Sedan EX 2.0 Flex 16V Aut.4p","2018","106788.00"),
+(41, "Honda","Civic Sedan EX 2.0 Flex 16V Aut.4p","2019","115315.00"),
+(42, "Honda","Civic Sedan EX 2.0 Flex 16V Aut.4p","2020","121025.00"),
+(43, "Honda","Fit DX 1.5 Flexone 16V 5p Mec.","2019","70145.00"),
+(44, "Honda","Fit DX 1.5 Flexone 16V 5p Mec.","2020","72832.00"),
+(45, "Honda","Fit DX 1.5 Flexone 16V 5p Mec.","2021","75085.00");
+
+SELECT * FROM Carros;
+
+SELECT codcarro, modelo, ano FROM Carros;
+
+SELECT * FROM Carros ORDER BY Modelo ASC;
+
+SELECT * FROM Carros ORDER BY Preco DESC;
+
+SELECT modelo, ano, preco FROM Carros ORDER BY fabricante ASC;

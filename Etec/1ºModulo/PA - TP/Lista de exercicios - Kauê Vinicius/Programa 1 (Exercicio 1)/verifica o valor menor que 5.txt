@@ -1,0 +1,13 @@
+1. Elabora um algoritmo(fluxograma, pseudocódigo e programa)
+que leia um número e msotre o seu valor,
+se ele for menor que cinco.
+
+ínicio do programa
+	imprimir: Esse programa verifica se o número é menor que 5
+	imprimir: Digite o número:
+	armazena o valor
+	SE valor < 5 
+		imprimir:O valor é menor que 5
+	SENÃO
+		imprimir:O valor não será mostrado
+fim do programa

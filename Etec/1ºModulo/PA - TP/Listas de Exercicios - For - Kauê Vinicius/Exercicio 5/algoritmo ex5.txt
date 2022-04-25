@@ -1,0 +1,11 @@
+5. Desenvolva um algoritmo, fluxograma e programa em C que leia um número menor que cinco e mostre os números pares entre o número lido e número 20.
+
+Início do programa:
+	imprimir: Esse programa imprime números pares do valor desejado menor que 5 até 20.
+	imprimir:Digite o número desejado menor que 5.
+	armazena o número
+	Para x = número faça até 20
+		SE x % 2 == 0
+			imprimir x 
+	Fim do para x
+fim do programa

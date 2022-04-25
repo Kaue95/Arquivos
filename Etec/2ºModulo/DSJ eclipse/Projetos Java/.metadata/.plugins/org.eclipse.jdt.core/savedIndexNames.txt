@@ -1,0 +1,13 @@
+INDEX VERSION 1.131+C:\Users\Kaue\Desktop\Etec\2ºModulo\DSJ\Projetos Java\.metadata\.plugins\org.eclipse.jdt.core
+4122360464.index
+1729542954.index
+2380175872.index
+3454248024.index
+81276228.index
+4078620317.index
+1569758627.index
+184271688.index
+2188704491.index
+1804906476.index
+620299624.index
+643109605.index

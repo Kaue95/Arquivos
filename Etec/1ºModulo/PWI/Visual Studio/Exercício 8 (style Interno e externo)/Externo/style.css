@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body
+{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+hr
+{
+    color: black;
+}
+h1 
+{
+    text-align: center;
+}
+h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-style:inherit;
+    color: black;
+    font-size:30px
+}
+div
+{
+    display: inline-block;
+}
+img
+{
+    width: 450px;
+    height: 400px;
+}
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:black;
+}
+h3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-style: italic;
+    font-size: 20px;
+}
+h4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-style:inherit;
+    color: black;
+}
+li
+{
+    display: list-item;
+}
+ol
+{
+    font-size: 15px;
+}
+a
+{
+    color: black;
+}
+h5
+{
+    text-align: justify;
+    font-style: inherit;
+    color: black;
+    font-size: 20px;
+}

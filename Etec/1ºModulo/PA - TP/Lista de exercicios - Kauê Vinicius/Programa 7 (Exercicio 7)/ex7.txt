@@ -1,0 +1,17 @@
+7. Crie um algoritmo (fluxograma, pseudocódigo e programa) que leia três números,
+ some seus valores e mostre o resultado se ele for maior que 20.
+
+ínicio do programa
+	imprimir: Esse programa soma 3 valores e mostra o resultado caso ele for maior que 20.
+	imprimir: Digite o 1º número:
+	armazena o primeiro número
+	imprimir: Digite o 2º número:
+	armazena o segundo número
+	imprimir: Digite o 3º número:
+	armazena o terceiro número
+	soma = val1 + val2 + val3
+	SE soma > 20
+		imprimir: O resultado da soma dos três valores é:
+	SENÃO	
+		imprimir: O resultado não pode ser mostrado.
+fim do programa

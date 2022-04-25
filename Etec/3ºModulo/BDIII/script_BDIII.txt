@@ -1,0 +1,86 @@
+SELECT *
+FROM veiculos
+WHERE preco
+BETWEEN 10000.00 AND 15000.00;
+
+
+SELECT *
+FROM clientes
+WHERE nomecliente
+BETWEEN 'F' AND 'R';
+
+
+SELECT *
+FROM veiculos
+order by modelo
+limit 2;
+
+
+SELECT
+MIN(preco)
+FROM veiculos;
+
+
+SELECT
+MAX(preco)
+FROM veiculos;
+
+SELECT
+MAX(preco) AS 'Maior Valor'
+FROM veiculos;
+
+SELECT
+COUNT(idveiculo) 
+FROM veiculos;
+
+SELECT
+AVG(preco) AS 'Média dos Preços dos veiculos'
+FROM veiculos;
+
+SELECT
+SUM(preco) 
+FROM veiculos;
+
+SELECT iv.idvenda, 
+iv.idveiculo,
+iv.qtdevendida,
+v.Preco,
+iv.qtdevendida * v.preco as 'Subtotal'
+FROM itensvendidos iv 
+INNER JOIN veiculos v
+ORDER BY iv.idvenda;
+
+
+
+SELECT iv.idvenda as "Venda", 
+vc.modelo as "Carro",
+iv.qtdevendida as "Qtde", 
+vc.preco,
+iv.qtdevendida * vc.preco as 'Subtotal'
+FROM itensvendidos iv
+INNER JOIN veiculos vc
+ORDER BY iv.idvenda;
+
+SELECT vd.idvenda as "Venda", 
+vd.datavenda as "Data",
+cli.nomecliente as "Nome", 
+cli.estado as "UF"
+FROM vendas vd 
+INNER JOIN clientes cli
+ORDER BY vd.idvenda;
+
+SELECT iv.idvenda as "Venda", 
+vc.modelo as "Carro",
+iv.qtdevendida * vc.preco as 'Subtotal'
+FROM itensvendidos AS iv 
+INNER JOIN veiculos AS vc
+ORDER BY iv.idvenda
+LIMIT 5;
+
+SELECT iv.idvenda as "Venda", 
+vc.modelo as "Carro",
+iv.qtdevendida * vc.preco as 'Subtotal'
+FROM itensvendidos AS iv 
+INNER JOIN veiculos AS vc
+ORDER BY iv.idvenda
+DESC LIMIT 3;

@@ -1,0 +1,51 @@
+Kaue Vinicius da Silva Sousa
+
+DROP DATABASE IF EXISTS nentendo;
+CREATE DATABASE IF NOT EXISTS nentendo;
+USE nentendo;
+
+CREATE TABLE Pokemons(
+	PokeID INT NOT NULL,
+	Nome VARCHAR(40) NOT NULL,
+	Altura FLOAT NOT NULL,
+	Peso FLOAT NOT NULL,
+	Categoria VARCHAR(30) NOT NULL,
+	Tipo VARCHAR(60) NOT NULL,
+	Fraquezas VARCHAR(100) NOT NULL,
+	CONSTRAINT PK_ID PRIMARY KEY(PokeID)
+);
+
+ALTER TABLE Pokemons
+ADD COLUMN Genero VARCHAR(6) NOT NULL AFTER Peso,
+ADD COLUMN Habilidades VARCHAR(40) NOT NULL AFTER Categoria;
+
+INSERT INTO Pokemons
+VALUES (1,'Bulbasaur','0.7','6.9','Male','Seed','Overgrow','Grass, Poison','Fire, Psychic, Flying, Ice'),
+(2,'Ivysaur','1.0','13.0','Male','Seed','Overgrow','Grass, Poison','Fire, Psychic, Flying, Ice'),
+(3,'Venusaur','2.0','100.0','Male','Seed','Overgrow','Grass, Poison','Fire, Psychic, Flying, Ice'),
+(4,'Charmander','0.6','8.5','Female','Lizard','Blaze','Fire','Water, Ground, Rock'),
+(5,'Charmeleon','1.1','19.0','Female','Flame','Blaze','Fire','Water, Ground, Rock'),
+(6,'Charizard','1.7','90.5','Female','Flame','Blaze','Fire, Flying','Water, Eletric, Rock'),
+(7,'Squirtle','0.5','9.0','Male','Tiny Turtle','Torrent','Water','Grass, Eletric'),
+(8,'Wartortle','1.0','22.5','Male','Turtle','Torrent','Water','Grass, Eletric'),
+(9,'Blastoise','1.6','85.5','Male','Shellfish','Torrent','Water','Grass, Eletric'),
+(10,'Abra','0.9','19.5','Female','Psi','Inner Focus, Synchronize','Psychic','Ghost, Dark, Bug'),
+(11,'Kadabra','1.3','56.5','Female','Psi','Inner Focus, Synchronize','Psychic','Ghost, Dark, Bug'),
+(12,'Alakazam','1.3','48.0','Female','Psi','Inner Focus, Synchronize','Psychic','Ghost, Dark, Bug'),
+(13,'Bellsprout','0.7','4.0','Male','Flower','Chlorophyll','Grass, Poison','Fire, Psychic, Flying, Ice'),
+(14,'Weepinbell','1.0','6.4','Male','Flycatcher','Chlorophyll','Grass, Poison','Fire, Psychic, Flying, Ice'),
+(15,'Victreebel','1.7','15.5','Male','Flycatcher','Chlorophyll','Grass, Poison','Fire, Psychic, Flying, Ice'),
+(16,'Gastly','1.3','0.1','Female','Gas','Levitate','Ghost, Poison','Ghost, Dark, Psychic, Ground'),
+(17,'Haunter','1.6','0.1','Female','Gas','Levitate','Ghost, Poison','Ghost, Dark, Psychic, Ground'),
+(18,'Gengar','1.5','40.5','Female','Shadow','Cursed Body','Ghost, Poison','Ghost, Dark, Psychic, Ground'),
+(19,'Mew','0.4','4.0','Male','New Species','Synchronize','Psychic','Ghost, Dark, Bug'),
+(20,'Mewtwo','2','122.0','Male','Genetic','Pressure','Psychic','Ghost, Dark, Bug');
+
+UPDATE Pokemons SET Tipo = ‘Madeira’ WHERE PokeID = ‘12’;
+UPDATE Pokemons SET Tipo = ‘Esquentadinho’ WHERE Tipo = ‘Fire’;
+DELETE FROM Pokemons WHERE PokeID = ‘18’;
+DELETE FROM Pokemons WHERE PokeID BETWEEN ‘5’ AND ‘11’;
+SELECT * FROM Pokemons ORDER BY Tipo DESC;
+
+
+

@@ -1,0 +1,19 @@
+2. Desenvolva um algoritmo, fluxograma e programa em C que leia um número e mostre na tela os números
+entre o número lido e 20.
+
+ínicio:
+	imprimir:Esse programa recebe um número e imprime o intervalo até o valor 20.
+	imprimir:Digite o valor ínicial:
+	Armazenar: O valor inicial
+	SE valor for maior que 20
+		Para x=inicial faça até 20
+			Imprimir: x
+		fim do for
+	SE valor for menor que 20
+		Para x=inicial faça até 20
+			Imprimir: x
+		fim do for	
+	SE valor for maior que 20
+		Imprimir:Não existe Intervalo
+Fim do programa
+	

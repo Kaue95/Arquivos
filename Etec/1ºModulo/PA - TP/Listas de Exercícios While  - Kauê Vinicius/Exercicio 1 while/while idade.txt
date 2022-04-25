@@ -1,0 +1,16 @@
+1. Solicitar a idade de várias pessoas e imprimir o total de pessoas com menos de 21 anos e o total de pessoas com mais de 50 anos. O programa termina quando idade for = -99
+
+Inicio:
+	int id50=0, id21=0, idade=0;
+	imprimir: Esse programa verifica a quantidade de pessoas maiores que 50 anos e menores que 21.
+	imprimir: Para sair usar -99
+	enquanto: idade!=-99
+		imprimir:Digite a idade da pessoa:
+		armazena idade
+		SE idade > 50
+			id50=id50+1 
+		SE idade < 21 e idade!=-99
+			id21=id21+1
+	fim do enquanto.
+	imprimir: Valores de id50 e id21
+fim do programa.

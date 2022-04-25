@@ -1,0 +1,11 @@
+Costrua um diagrama, algoritmo e programa de blocos que:
+
+ínicio do programa.
+        imprimir: Esse programa converte dolar em real.
+        imprimir: Digite a quantidade de dolar.
+        armazena em qtdolar.
+        imprimir: Digite a cotação do dolar.
+        armazena em ctdolar.
+        real = ctdolar * qtdolar.
+        imprimir real.
+fim do programa.

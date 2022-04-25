@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1627432769920_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1627432769976_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1629852043894_3" label="5ºAula" name="5ºAula">
+<item elementID="=5ºAula" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5ºAulaOO" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1629852098308_4" label="Pasta 5ºAula" name="Pasta 5ºAula">
+<item elementID="=5ºAula" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5ºAulaOO" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1627432774136_2" label="Window Working Set" name="Aggregate for window 1627432774136"/>
+</workingSetManager>

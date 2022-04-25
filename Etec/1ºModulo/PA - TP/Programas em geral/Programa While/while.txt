@@ -1,0 +1,11 @@
+Elaborar um programa que faça a tabuada de número impares de 1 até 10 que o usuario desejar.
+
+Ínicio:
+	int x=1;
+	imprimir:Esse programa faz a tabuada que desejar apenas de números impares.
+	imprimir: Digite a tabuada desejada:
+	armazena o valor digitado em val.
+	enquanto: x<10 && x%2!=0
+		imprimir: (valor de val) x (valor de x) = val*x
+	fim do enquanto.
+fim do programa. 

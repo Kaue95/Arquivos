@@ -1,0 +1,12 @@
+2. Fazer um programa que solicite ao usuário um número dentro de um laço, continuamente, a condição de término do laço é quando digitar o valor zero, no final deverá ser impresso o maior valor.
+
+Início do programa:
+	int numero=-1
+	imprimir: Esse programa imprime o maior número digitado.
+	enquanto numero!=0
+		imprimir:Digite o número:
+		armazena o número
+		SE valor < numero
+			valor = numero
+	fim do enquanto;
+fim do programa

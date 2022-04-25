@@ -1,0 +1,19 @@
+5. Elabore um algoritmo (fluxograma, pseudocódigo e programa) que leia 
+dois números e mostre os seus valores multiplicados por 10 se a soma dos valores originais 
+for menor que 20.
+
+Inicio do programa
+	imprimir: Esse programa recebe 2 número e mostra os valores multiplicados por 10
+se sua somatoria for menor que 20
+	imprimir: Digite o 1º número
+	armazena o valor em val1	
+	imprimir: Digite o 2º número
+	armazena o valor em val2
+	Somar val1 com val2 e armazenar em res(res = val + val2)
+	SE soma for menor que 20
+		imprimir val1 * 10
+		imprimir val2 * 10
+	SENÃO 
+		imprimir Os valores somados são maiores ou igual a 20
+fim do programa
+	

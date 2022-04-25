@@ -1,0 +1,10 @@
+elabore um programa em C, fluxograma e algoritmo que imprima seu nome 10x.
+
+Inicio do programa:
+	
+	imprimir: Esse programa imprime meu nome 10x.
+	faça para x < 10
+		imprimir: Kauê
+	fim do faça.
+fim do programa.
+	

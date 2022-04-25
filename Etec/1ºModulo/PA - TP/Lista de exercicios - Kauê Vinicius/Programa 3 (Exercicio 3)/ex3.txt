@@ -1,0 +1,15 @@
+3. Desenvolva um algoritmo (fluxograma, pseudocódigo e programa) que leia um número, 
+subtraia de seu valor o número 10 e mostre o resultado se ele for maior que três.
+
+Inicio do programa
+	imprimir: Esse programa faz a subtração e mostra o resultado se ele for maior que três.
+	imprimir: Digite um número:
+	armazena o valor
+	res= val1 - 10
+	SE res > 3
+		imprimir: O resultado da subtração é maior que três, portanto o resultado é:
+ 	SE res < 3	
+		imprimir: O resultado não pode ser mostrado, por conta de ser menor que três.
+	SE res == 3
+		imprimir: O resultado da subtração é igual a 3!
+fim do programa

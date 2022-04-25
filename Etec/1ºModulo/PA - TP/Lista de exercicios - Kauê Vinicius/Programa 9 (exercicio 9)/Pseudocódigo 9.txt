@@ -1,0 +1,21 @@
+8. Elabore um algoritmo (fluxogroma, pseudocódigo e programa) que leia dois números e mostre
+o seu valor dividido por 2, se o resultado for maior que 20.
+
+Ínicio do programa
+	imprimir:Esse programa faz o calculo de números divididos por 2, e apresenta o resultado se for maior que 20.
+	imprimir:Digite o 1º número:
+	armazena o valor1
+	imprimir:Digite o 2º número:
+	armazena o valor2
+	valor1 recebe primeiro /2
+	valor2 recebe segundo /2
+	SE valor1 > 20
+		imprimir: valor1
+	SENÃO
+		imprimir: valor 1 não é maior que 20
+	SE valor2 > 20
+		imprimir: valor2
+	SENÃO
+		imprimir: valor 2 não é maior que 20
+fim do programa
+	

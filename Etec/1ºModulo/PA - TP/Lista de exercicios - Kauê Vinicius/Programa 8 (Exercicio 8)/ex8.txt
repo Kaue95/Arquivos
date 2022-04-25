@@ -1,0 +1,14 @@
+8. Elabore um algoritmo (fluxograma, pseudocódigo e programa)
+que leia dois números e mostre o seus valores se eles forem iguais.
+
+ínicio do programa 
+	imprimir:Esse programa verifica se os números são iguais
+	imprimir:Digite o primeiro número:
+	armazena o primeiro número
+	imprimir:Digite o segundo número:
+	armazena o segundo número
+	SE valor1 == valor2
+		imprimir: Os números são iguais
+	SENÃO 
+		imprimir: valor não encontrado
+fim do programa

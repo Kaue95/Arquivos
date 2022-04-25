@@ -1,0 +1,5 @@
+3 tipos basicos:
+         float - flutuante - 1,10 ; 2,5
+         char - caracter a; b; c
+         int - inteira 10; 20 ; -50
+

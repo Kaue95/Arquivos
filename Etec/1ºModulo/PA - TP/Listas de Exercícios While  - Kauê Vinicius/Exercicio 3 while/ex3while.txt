@@ -1,0 +1,24 @@
+3. Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
+
+Inicio do programa
+	int a=80000, b=200000;
+	imprimir: Esse programa calcula o número de anos necessários para que a população do pais A que obtem de oitenta mil habitantes
+	imprimir:ultrapasse ou iguale a população do país B que obtem de duzentos mil habitantes.
+	imprimir:Levando em conta a taxa de crescimento de 1.5 e 3 em porcertagem de ambos.
+	Inicio do faz
+		a=b + (0.03 * a);
+		b=b + (0.015 *b);
+		mes=mes+1;
+		SE mes == 12
+			SE ano = ano + 1 
+				mes=0
+			Fim do SE
+		Fim do SE
+	Fim do faz
+	Enquanto a < b
+		imprimir: HabitantesA: 
+		imprimir: HabitantesB: 
+		imprimir: Anos necessário:
+	Fim do enquanto
+Fim do programa
+			

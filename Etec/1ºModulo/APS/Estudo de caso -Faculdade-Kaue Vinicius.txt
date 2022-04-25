@@ -1,0 +1,5 @@
+Para o estudo de caso informado, o projeto para a informatização de uma faculdade com um sistema de registro do rendimento de alunos, disciplinas cursadas ou em andamento dos mesmos, notas e faltas, onde professores ministram tais disciplinas.
+
+Será necessario uma metodologia em cascata pois se trata de um sistema extenso envolvendo muitas pessoas (alunos, professores e funcionarios da educação), se ramificando em diversos setores, não focalizando em apenas requisitos básicos.
+
+A ferramenta que concordo ser a mais indicada para este projeto é um desenvolvimento em Web, pois é notavel ser mais acessivel para acesso, tanto de alunos quanto de professores, para a digitalização de informações afim de armazenar tais e realizar o compartilhamento entre ambos dentro do Site.

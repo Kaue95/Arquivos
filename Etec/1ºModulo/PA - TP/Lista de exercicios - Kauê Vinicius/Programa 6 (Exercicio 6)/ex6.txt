@@ -1,0 +1,13 @@
+6. Desenvolva um algoritmo (fluxograma, pseudocódigo e programa) que leia um número e 
+mostre o seu resultado multiplicado por 3, se o resultado for maior que 15.
+
+inicio do programa
+	imprimir:Esse programa faz a multiplicação de um número por 3 e mostra caso o resultado for maior que 15.
+	imprimir: Digite um número
+	armazena o valor
+	res = valor1 * 3
+	SE res > 15
+		imprimir: O resultado da multiplicação é maior que 15, portanto o resultado é:
+	SENÃO
+		imprimir: O resultado não pode ser mostrado!!.
+fim do programa

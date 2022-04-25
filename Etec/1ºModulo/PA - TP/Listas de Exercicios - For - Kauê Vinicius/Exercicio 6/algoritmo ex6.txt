@@ -1,0 +1,14 @@
+6. Crie um algoritmo, fluxograma e programa em C que leia um número maior que 20 e mostre na tela os números entre o número digitado e número 1 em ordem decrescente.
+
+Início do programa:
+	imprimir: Esse programa imprime números entre o valor digitado e o número 1 de forma decrescente.
+	imprimir: Digite o número desejado maior que 20.
+	armazene o número 
+	Se numero >20
+		Para x= numero faça até 1
+			imprimir: x
+		Fim do para
+	Senão
+		imprimir: Você digitou um número menor ou igual a 20.
+fim do programa
+
